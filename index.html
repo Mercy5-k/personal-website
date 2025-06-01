@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Links -->
-    <link rel="stylesheet" href="./css/styles.css">
+   <link rel="stylesheet" href="./css/styles.css" />
     <script src="./script/script.js" defer></script>
     <title>Kinya's Personal Website</title>
 </head>
@@ -12,6 +12,9 @@
     <!-- Header/Navigation -->
      <header></header>
         <nav>
+            <div>
+                <a href="#hero" class="logo">Mercy Kinya</a>
+            </div>
             <ul>
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -22,11 +25,62 @@
         </nav>
     </header>
      <!--Hero Section-->
-    <!-- About Section-->
-     <!--Skills Section-->
-     <!--Project Section-->
-     <!--Contact Section-->
-     <!--Footer-->
+     <section id="hero">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1>Hello, I'm Mercy Kinya</h1>
+      <p>I'm a beginner software developer and building my first website.</p>
+      <a href="#about" class="btn">Learn More</a>
+    </div>
+    <div class="hero-image">
+      <img src="./images/mercy_kinya.png" alt="Mercy Kinya" width="250px" height="250px"/>
+    </div>
+  </div>
+</section>
 
+    <!-- About Section-->
+      <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>Hi! I'm Mercy, an aspiring software engineer passionate about solving problems and creating useful applications. I'm currently learning front-end and back-end web development.</p>
+  </section>
+
+     <!--Skills Section-->
+     <section id="skills" class="section">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>HTML & CSS</li>
+      <li>JavaScript (Learning)</li>
+      <li>Git & GitHub</li>
+      <li>Python (Learning)</li>
+    </ul>
+  </section>
+     <!--Project Section-->
+     <section id="projects" class="section">
+    <h2>Projects</h2>
+    <p>Here are a few simple projects I've built while learning:</p>
+    <ul>
+      <li>Personal Website (this one!)</li>
+      <li>Portfolio Homepage (coming soon)</li>
+    </ul>
+  </section>
+     <!--Contact Section-->
+     <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <p>You can reach me at: <a href="mailto:kiqsmercy@gmail.com">kiqsmercy@gmail.com</a></p>
+    <form class="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+  <section id="contact" class="section">
+  <p>Visit my GitHub: 
+    <a href="https://github.com/Mercy5-k" target="_blank">github.com/Mercy5-k</a>
+  </p>
+</section>
+
+  </section>
+     <!--Footer-->
+<p>&copy; 2025 Mercy Kinya. All rights reserved.</p>
 </body>
 </html>
