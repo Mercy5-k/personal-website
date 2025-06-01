@@ -11,6 +11,33 @@ body{
   line-height: 1.6;
 }
 
+:root {
+  --bg-light: #fff7ed;
+  --bg-dark: #121212;
+  --text-light: #000;
+  --text-dark: #fff;
+  --primary-light: #1400f3;
+  --primary-dark: #bb86fc;
+}
+
+body {
+  background-color: var(--bg-light);
+  color: var(--text-light);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body[data-theme='dark'] {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+a {
+  color: var(--primary-light);
+}
+
+body[data-theme='dark'] a {
+  color: var(--primary-dark);
+}
 nav{
   background-color: #1400f3;
   color: rgb(21, 4, 4);
@@ -39,7 +66,7 @@ nav{
   color: white;
   text-decoration: none;
   padding: 8px 12px;
-  transition: backgroun 0.3s ease;
+ transition: background-color 0.3s ease;
 }
 
 .nav-links li a:hover{
@@ -50,6 +77,13 @@ nav{
 #hero{
   padding: 60px 20px;
   background-color: #F9FAFB;
+}
+
+#hero-box {
+  padding: 30px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  background-color: white;
 }
 
 .hero-content{
@@ -84,7 +118,7 @@ nav{
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
-  transition: backgroun 0.3s ease;
+  transition: background-color0.3s ease;
 }
 
 .btn:hover{
@@ -141,7 +175,7 @@ nav{
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
-  transition: backgroun 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .contact-form button:hover{
@@ -156,14 +190,14 @@ footer{
   margin-top: 60px;
 }
 
- @media(max-width: 768px) {
+@media(max-width: 768px) {
   nav{
     flex-direction: column;
     align-items: flex-start;
   }
 
   .nav-links{
-    flex-direction: columnr;
+    flex-direction: column;
     gap: 10px;
     margin-top: 10px;
   }

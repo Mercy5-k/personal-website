@@ -9,9 +9,11 @@
     <title>Kinya's Personal Website</title>
 </head>
 <body>
-    <!-- Header/Navigation -->
-     <header></header>
+    <header>
         <nav>
+            <!-- Header/Navigation -->
+        </nav>
+    </header>
             <div>
                 <a href="#hero" class="logo">Mercy Kinya</a>
             </div>
@@ -22,14 +24,19 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contacts">Contact</a></li>
             </ul>
+            <button id="darkModeToggle" aria-label="Toggle dark mode">🌙</button>
         </nav>
     </header>
+
      <!--Hero Section-->
      <section id="hero">
   <div class="hero-content">
     <div class="hero-text">
+        <div id="hero-box">
       <h1>Hello, I'm Mercy Kinya</h1>
+       <div id="bio" style="display: none;">
       <p>I'm a beginner software developer and building my first website.</p>
+      </div>
       <a href="#about" class="btn">Learn More</a>
     </div>
     <div class="hero-image">
@@ -41,6 +48,8 @@
     <!-- About Section-->
       <section id="about" class="section">
     <h2>About Me</h2>
+    <button id="toggleBioBtn">Show More</button>
+  <p id="bio" style="display: none;">
     <p>Hi! I'm Mercy, an aspiring software engineer passionate about solving problems and creating useful applications. I'm currently learning front-end and back-end web development.</p>
   </section>
 
@@ -65,22 +74,19 @@
   </section>
      <!--Contact Section-->
      <section id="contact" class="section">
-    <h2>Contact Me</h2>
-    <p>You can reach me at: <a href="mailto:kiqsmercy@gmail.com">kiqsmercy@gmail.com</a></p>
-    <form class="contact-form">
+  <h2>Contact Me</h2>
+  <p>You can reach me at: <a href="mailto:kiqsmercy@gmail.com">kiqsmercy@gmail.com</a></p>
+  <form class="contact-form">
     <input type="text" name="name" placeholder="Your Name" required />
     <input type="email" name="email" placeholder="Your Email" required />
     <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
     <button type="submit">Send Message</button>
   </form>
-  <section id="contact" class="section">
-  <p>Visit my GitHub: 
-    <a href="https://github.com/Mercy5-k" target="_blank">github.com/Mercy5-k</a>
-  </p>
+  <p>Visit my GitHub: <a href="https://github.com/Mercy5-k" target="_blank">github.com/Mercy5-k</a></p>
 </section>
 
   </section>
      <!--Footer-->
-<p>&copy; 2025 Mercy Kinya. All rights reserved.</p>
+ <p>&copy; 2025 Mercy Kinya. All rights reserved.</p>
 </body>
 </html>
